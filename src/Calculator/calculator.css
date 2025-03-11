@@ -1,0 +1,13 @@
+.calculator {
+  display: none;
+}
+
+.calculator_active {
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator__btns{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+}

@@ -1,0 +1,30 @@
+@keyframes profileSlide {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+        display: block;
+    }
+}
+
+@keyframes greetingSlide {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes circle_miracle {
+    50%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+        display: none;
+    }
+}
