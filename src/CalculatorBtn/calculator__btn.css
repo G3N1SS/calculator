@@ -1,0 +1,10 @@
+.calculator__btn{
+  font-size: 32px;
+  color: #38B9ff;
+  background-color: #fff;
+  border-radius: 16px;
+  font-weight: 600;
+  width: 62px;
+  height: 60px;
+  text-align: center;
+}

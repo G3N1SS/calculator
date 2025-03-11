@@ -1,37 +1,38 @@
-body{
-  background-color: #DAF0FF;
+body {
+  background-color: #daf0ff;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
-body::before{
-  content: '';
+body::before {
+  content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: #38B9FF;
+  background-color: #38b9ff;
   width: 25px;
   height: 25px;
   bottom: 10%;
   left: 7%;
 }
 
-body::after{
-  content: '';
+body::after {
+  content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: #FFF;
+  background-color: #fff;
   width: 23px;
   height: 23px;
   top: 13%;
   right: 5%;
 }
 
-.circle{
+.circle {
   border-radius: 50%;
-  background-color: #109DFF;
+  background-color: #109dff;
   width: 50vw;
   height: 50vw;
   display: flex;
@@ -39,6 +40,6 @@ body::after{
   align-items: center;
 }
 
-.circle_miracle{
+.circle_miracle {
   animation: circle_miracle 3s ease-in-out forwards;
 }
