@@ -8,3 +8,8 @@
   height: 60px;
   text-align: center;
 }
+
+.calculator__btn_small{
+  font-size: 20px;
+  height: 40px;
+}

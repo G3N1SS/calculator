@@ -20,6 +20,7 @@
     display: block;
     transform: scale(1);
     opacity: 1;
+    box-shadow: 60px 60px 40px rgba(96, 190, 255, 0.5);
   }
 }
 
