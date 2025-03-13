@@ -1,7 +1,7 @@
 .calculator {
   opacity: 0;
   display: none;
-  background-color: #F7F8FB;
+  background-color: #f7f8fb;
   padding: 140px 34px 40px;
   border-radius: 39px;
   font-family: "Poppins";
@@ -14,44 +14,44 @@
   flex-direction: column;
 }
 
-.calculator__side-nums{
+.calculator__side-nums {
   display: grid;
   gap: 24px;
-  grid-template-rows: 60px 96px 96px ;
+  grid-template-rows: 60px 96px 96px;
   max-width: 62px;
 }
 
-.calculator__side-nums .calculator__btn:nth-child(2){
+.calculator__side-nums .calculator__btn:nth-child(2) {
   height: 96px;
 }
-.calculator__side-nums .calculator__btn:nth-child(3){
+.calculator__side-nums .calculator__btn:nth-child(3) {
   height: 96px;
-  background-color: #19ACFF;
-  color: #B2DAFF;
+  background-color: #19acff;
+  color: #b2daff;
 }
 
-.calculator__nums{
+.calculator__nums {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.calculator__btns{
+.calculator__btns {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.calculator__exercise{
+.calculator__exercise {
   font-size: 24px;
-  color:#424242;
+  color: #424242;
   margin-bottom: 6px;
   text-align: right;
 }
 
-.calculator__res{
+.calculator__res {
   text-align: end;
   margin-bottom: 75px;
   font-size: 48px;
@@ -59,44 +59,44 @@
   color: #424242;
 }
 
-.calculator__btn_blue{
+.calculator__btn_blue {
   border-radius: 12px;
-  background-color: #ADE2FF;
-  color: #109DFF;
+  background-color: #ade2ff;
+  color: #109dff;
 }
 
-.calculator__nums .calculator__btn:nth-child(1){
+.calculator__nums .calculator__btn:nth-child(1) {
   order: 3;
 }
-.calculator__nums .calculator__btn:nth-child(2){
+.calculator__nums .calculator__btn:nth-child(2) {
   order: 2;
 }
-.calculator__nums .calculator__btn:nth-child(3){
+.calculator__nums .calculator__btn:nth-child(3) {
   order: 1;
 }
-.calculator__nums .calculator__btn:nth-child(4){
+.calculator__nums .calculator__btn:nth-child(4) {
   order: 6;
 }
-.calculator__nums .calculator__btn:nth-child(5){
+.calculator__nums .calculator__btn:nth-child(5) {
   order: 5;
 }
-.calculator__nums .calculator__btn:nth-child(6){
+.calculator__nums .calculator__btn:nth-child(6) {
   order: 4;
 }
-.calculator__nums .calculator__btn:nth-child(7){
+.calculator__nums .calculator__btn:nth-child(7) {
   order: 9;
 }
-.calculator__nums .calculator__btn:nth-child(8){
+.calculator__nums .calculator__btn:nth-child(8) {
   order: 8;
 }
-.calculator__nums .calculator__btn:nth-child(9){
+.calculator__nums .calculator__btn:nth-child(9) {
   order: 7;
 }
-.calculator__nums .calculator__btn:nth-child(10){
+.calculator__nums .calculator__btn:nth-child(10) {
   order: 10;
   grid-column: 1 / 3;
   width: 144px;
 }
-.calculator__nums .calculator__btn:nth-child(11){
+.calculator__nums .calculator__btn:nth-child(11) {
   order: 11;
 }

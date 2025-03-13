@@ -1,6 +1,6 @@
-.calculator__btn{
+.calculator__btn {
   font-size: 32px;
-  color: #38B9ff;
+  color: #38b9ff;
   background-color: #fff;
   border-radius: 16px;
   font-weight: 600;
@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-.calculator__btn_small{
+.calculator__btn_small {
   font-size: 20px;
   height: 40px;
 }
