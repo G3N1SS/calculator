@@ -29,10 +29,10 @@ export default function Calculator({ loggedIn }) {
         <CalculatorBtn text={"μ"} type={"small"} />
         <CalculatorBtn text={"sin"} type={"small"} />
         <CalculatorBtn text={"deg"} type={"small"} />
-        <CalculatorBtn text={"AC"} />
-        <CalculatorBtn text={"C"} func={() => setNum(0)} />
-        <CalculatorBtn text={"/"} func={()=> setOperation('/')}/>
-        <CalculatorBtn text={"*"} func={()=> setOperation('*')}/>
+        <CalculatorBtn text={"AC"} func={() => {setNum(0); setLastNum(0); setRes(0)}}/>
+        <CalculatorBtn text={"C"} func={() => {setNum(0);}} />
+        <CalculatorBtn text={"/"} func={()=> {setOperation('/'); setLastNum(currentNum); setNum(0) }} />
+        <CalculatorBtn text={"*"} func={()=> {setOperation('*'); setLastNum(currentNum); setNum(0)}} />
         <div className="calculator__nums">
           {(function () {
             let result = [];
@@ -47,11 +47,11 @@ export default function Calculator({ loggedIn }) {
             }
             return result;
           })()}
-          <CalculatorBtn text={"."} />
+          <CalculatorBtn text={"."} func={() => setNum(parseInt(currentNum.toString() + '.'))}/>
         </div>
         <div className="calculator__side-nums">
-          <CalculatorBtn text={"-"} func={()=> setOperation('-')}/>
-          <CalculatorBtn text={"+"} func={()=> setOperation('+')}/>
+          <CalculatorBtn text={"-"} func={()=> {setOperation('-'); setLastNum(currentNum); setNum(0) }}/>
+          <CalculatorBtn text={"+"} func={()=> {setOperation('+'); setLastNum(currentNum); setNum(0) }}/>
           <CalculatorBtn text={"="} func={()=>{
             switch(operation){
               case '+':
@@ -59,6 +59,12 @@ export default function Calculator({ loggedIn }) {
                 break;
               case '-':
                 sub();
+                break;
+              case '*':
+                multiply();
+                break;
+              case '/':
+                div();
                 break;
             }
           }}/>
